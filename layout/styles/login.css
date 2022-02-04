@@ -30,6 +30,14 @@
 }
 .login_card .login_button {
   margin-top: 23px;
+  width: 100%;
+  height: 53px;
+  background-color: rgb(13, 159, 243);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 .login_heading {
   font-size: 25px;

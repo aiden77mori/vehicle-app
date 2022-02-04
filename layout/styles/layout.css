@@ -28,10 +28,50 @@
 --------------------------------------------------------------------------------------------------------------- */
 #topbar {
   padding: 20px 0;
-  font-size: 0.8rem;
-  text-transform: uppercase;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.topbar {
+  box-shadow: 0 10px 10px -15px rgba(0, 0, 0, 0.4);
+}
+.topbar .fl_left .admin_logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #000000;
+}
+.topbar .fl_right li .user_box {
+  width: 43px;
+  height: 43px;
+  background-color: #169FDB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.topbar .fl_right li .logout_box {
+  width: 43px;
+  height: 43px;
+  background-color: #2E2E2E;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#topbar ul {
+  display: flex;
+  align-items: center;
+}
 #topbar ul li {
   display: inline-block;
   margin-right: 15px;
@@ -41,6 +81,23 @@
   padding-right: 0;
   border-right: none;
 }
+#topbar ul .topbar_date_box {
+  display: flex;
+}
+#topbar ul li .topbar_date {
+  font-size: 14px;
+  color: #000000;
+  border-right: 2px solid rgb(13, 159, 243);
+  padding: 0 5px;
+}
+#topbar ul li .topbar_date:last-child {
+  border: none;
+}
+#topbar ul li .topbar_username {
+  font-size: 16px;
+  color: #000000;
+}
+
 #topbar i {
   line-height: normal;
 }

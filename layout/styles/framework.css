@@ -113,8 +113,8 @@ body {
 .clear::after,
 .group::before,
 .group::after {
-  display: table;
-  content: "";
+  /* display: table;
+  content: ""; */
 }
 .clear,
 .clear::after,

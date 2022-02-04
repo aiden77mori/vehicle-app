@@ -17,49 +17,33 @@
   </head>
 
   <body id="top">
-    <div class="wrapper row0">
+    <div class="wrapper topbar">
       <div id="topbar" class="hoc clear">
         <div class="fl_left">
-          <!-- ################################################################################################ -->
-          <ul class="nospace">
-            <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
-            <li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>
-          </ul>
-          <!-- ################################################################################################ -->
+          <div class="admin_logo">logo dealera</div>
         </div>
         <div class="fl_right">
-          <!-- ################################################################################################ -->
           <ul class="nospace">
             <li>
-              <a href="index.html"><i class="fas fa-home"></i></a>
+              <div class="topbar_date_box">
+                <h5 class="topbar_date">10:12</h5>
+                <h5 class="topbar_date">piątek 12.12.2021</h5>
+              </div>
             </li>
             <li>
-              <a href="#" title="Help Centre"
-                ><i class="far fa-life-ring"></i
-              ></a>
+              <h3 class="topbar_username">Anatol Herubiński</h3>
             </li>
             <li>
-              <a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a>
+              <div class="user_box">
+                <img src="../../images/user.svg" alt="user" />
+              </div>
             </li>
             <li>
-              <a href="#" title="Sign Up"><i class="fas fa-edit"></i></a>
-            </li>
-            <li id="searchform">
-              <div>
-                <form action="#" method="post">
-                  <fieldset>
-                    <legend>Quick Search:</legend>
-                    <input
-                      type="text"
-                      placeholder="Enter search term&hellip;"
-                    />
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                  </fieldset>
-                </form>
+              <div class="logout_box">
+                <img src="../../images/logout.svg" alt="logout" />
               </div>
             </li>
           </ul>
-          <!-- ################################################################################################ -->
         </div>
       </div>
     </div>
@@ -68,22 +52,32 @@
       <div id="search" class="hoc clear">
         <div class="search_container">
           <div class="search_header">
-            <img src="../../images/user/search.svg" alt="search_icon">
+            <img src="../../images/user/search.svg" alt="search_icon" />
             <p class="search_header_content">WYSZUKAJ POJAZD</p>
           </div>
           <div class="search_card">
-            <input type="text" placeholder="numer rejestracyjny pojazdu" class="search_form" />
+            <input
+              type="text"
+              placeholder="numer rejestracyjny pojazdu"
+              class="search_form"
+            />
             <p class="search_middle">lub</p>
             <div class="form_calender">
-              <input type="text" placeholder="data wizyty (dd-mm-rrrr)" class="search_form" />
-              <img src="../../images/user/calendar-alt.svg" alt="calendar-icon" class="calender_icon">
+              <input
+                type="text"
+                placeholder="data wizyty (dd-mm-rrrr)"
+                class="search_form"
+              />
+              <img
+                src="../../images/user/calendar-alt.svg"
+                alt="calendar-icon"
+                class="calender_icon"
+              />
             </div>
-            <button class="search_btn">
-              wyszukaj
-            </button>
+            <button class="search_btn">wyszukaj</button>
           </div>
           <div class="search_alert">
-            <img src="../../images/login/alert.svg" alt="alert_icon">
+            <img src="../../images/login/alert.svg" alt="alert_icon" />
             <p class="alert_content">Brak danych!</p>
           </div>
         </div>

@@ -561,8 +561,28 @@
 
 /* Copyright
 --------------------------------------------------------------------------------------------------------------- */
+.custom_footer {
+  height: 41px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 #copyright {
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  display: flex;
+  align-items: center;
+}
+#copyright img {
+  width: 35px;
+  height: 35px;
+}
+#copyright p {
+  font-size: 12px;
+  color: #000000;
+  margin-left: 10px;
 }
 #copyright * {
   margin: 0;

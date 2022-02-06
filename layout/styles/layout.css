@@ -167,6 +167,11 @@
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
 #header {
+  height: 100%;
+}
+.header {
+  background-color: #2E2E2E;
+  height: 70px;
 }
 
 #header #logo {
@@ -636,8 +641,10 @@ nav ol {
 
 /* Top Navigation */
 #mainav {
+  height: 100%;
 }
 #mainav ul {
+  height: 100%;
   text-transform: uppercase;
 }
 #mainav ul ul {
@@ -651,22 +658,36 @@ nav ol {
   top: 0;
 }
 #mainav li {
-  display: block;
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   float: left;
   margin: 0;
   padding: 0;
+  width: 25%;
+  height: 100%;
+  border-left: 1px solid #E9E9E9;
+  cursor: pointer;
 }
 #mainav li:last-child {
   margin-right: 0;
+  border-right: 1px solid #E9E9E9;
 }
 #mainav li li {
   width: 100%;
   margin: 0;
 }
+#mainav li img {
+  width: 32px;
+  height: 32px;
+}
 #mainav li a {
   display: block;
-  padding: 40px 25px;
+  height: 100%;
+  color: #FFFFFF;
+  padding: 0px 15px;
 }
 #mainav li li a {
   border: solid;
@@ -1062,7 +1083,7 @@ textarea:focus,
 
 /* Header */
 #header #logo h1 a {
-  color: inherit;
+  /* color: inherit; */
 }
 
 /* Page Intro */
@@ -1130,15 +1151,17 @@ textarea:focus,
 #mainav {
 }
 #mainav li a {
-  color: inherit;
   border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #mainav .active a,
 #mainav a:hover,
 #mainav li:hover > a {
-  color: #ffffff;
-  background-color: #a60009;
+  color: #169FDB;
 }
+
 #mainav li li a,
 #mainav .active li a {
   color: #ffffff;

@@ -40,16 +40,30 @@
 
 .recovery_card {
   width: 100%;
-  padding: 70px 41px 64px 41px;
+  padding: 41px;
   background: #e9e9e9;
   display: flex;
   flex-direction: column;
 }
-.recovery_box .recovery_card .recovery_form {
+.recovery_box .recovery_card .recovery_info {
   width: 100%;
-  height: 53px;
-  padding-left: 26px;
-  border: none;
+  height: 103px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.recovery_box .recovery_card .recovery_info .imgBox {
+  width: 60px;
+  height: 50px;
+  background-color: #169FDB;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recovery_box .recovery_card .recovery_info .infoTitle {
+  padding-left: 17px;
+  color: #000;
 }
 .recovery_box .recovery_card .recovery_btn {
   margin-top: 22px;

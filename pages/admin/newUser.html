@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>Vehicle</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      href="../../layout/styles/layout.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="../../layout/styles/admin/newUser.css" />
+  </head>
+
+  <body id="top">
+    <!-- Admin Topbar -->
+    <div class="wrapper topbar">
+      <div id="topbar" class="hoc clear">
+        <div class="fl_left">
+          <div class="admin_logo">logo dealera</div>
+        </div>
+        <div class="fl_right">
+          <ul class="nospace">
+            <li>
+              <div class="topbar_date_box">
+                <h5 class="topbar_date">10:12</h5>
+                <h5 class="topbar_date">piątek 12.12.2021</h5>
+              </div>
+            </li>
+            <li>
+              <h3 class="topbar_username">Anatol Herubiński</h3>
+            </li>
+            <li>
+              <div class="user_box">
+                <img src="../../images/user.svg" alt="user" />
+              </div>
+            </li>
+            <li>
+              <div class="logout_box">
+                <img src="../../images/logout.svg" alt="logout" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin Header -->
+    <div class="wrapper header">
+      <header id="header" class="hoc clear">
+        <nav id="mainav">
+          <ul class="clear">
+            <li class="active">
+              <img src="../../images/admin/friends.png" alt="friends" />
+              <a class="drop" href="#">UŻYTKOWNICY</a>
+              <ul>
+                <li class="active">
+                  <a href="pages/gallery.html">dodaj nowego użytkownika</a>
+                </li>
+                <li><a href="pages/full-width.html">lista użytkowników</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="../../images/admin/location.png" alt="location" />
+              <a href="#">WSZYSTKIE KONTA</a>
+              <ul>
+                <li>
+                  <a href="pages/gallery.html">dodaj nowego użytkownika</a>
+                </li>
+                <li><a href="pages/full-width.html">lista użytkowników</a></li>
+              </ul>
+            </li>
+            <li>
+              <img src="../../images/admin/setting.png" alt="setting" />
+              <a href="#">URZĄDZENIA</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="wrapper">
+      <div id="newAccount" class="hoc clear">
+        <div class="newAccount_container">
+          <div class="newAccount_card">
+            <div class="header">
+              <img src="../../images/admin/add.svg" alt="add" />
+              <p class="search_header_content">DODAWANIE NOWEGO UŻYTKOWNIKA</p>
+            </div>
+            <div class="content">
+              <input
+                type="text"
+                placeholder="Nazwa Użytkownika / login"
+                class="newAccount_form"
+              />
+              <input
+                type="text"
+                placeholder="Imię i nazwisko"
+                class="newAccount_form"
+              />
+              <input type="text" placeholder="Email" class="newAccount_form" />
+
+              <div class="newAccount_form checkBox">
+                <p class="title">Czy admin?</p>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+
+              <div class="newAccount_form selectBox">
+                <p>Lokalizacja</p>
+                <img
+                  src="../../images/admin/down-carrot.svg"
+                  alt="down-carrot"
+                />
+              </div>
+            </div>
+          </div>
+          <button class="newAccount_btn">DODAJ UŻYTKOWNIKA</button>
+        </div>
+
+        <div class="popup">
+          <div>lokalizacja 1</div>
+          <div>lokalizacja 2</div>
+          <div>lokalizacja 3</div>
+          <div>lokalizacja 4</div>
+          <div>lokalizacja 5</div>
+          <div>lokalizacja 6</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="wrapper custom_footer">
+      <div id="copyright" class="hoc clear">
+        <img src="../../images/logo.png" alt="logo" />
+        <p>Wszelkie prawa zastrzeżone &copy; 2022</p>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPTS -->
+    <script src="../../layout/scripts/jquery.min.js"></script>
+    <script src="../../layout/scripts/jquery.backtotop.js"></script>
+    <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var left = $(".selectBox").position().left;
+        var top = $(".selectBox").position().top;
+        var width = $(".selectBox")[0].offsetWidth;
+        $(".popup").css({ top: top, left: left + width + 10 });
+      });
+    </script>
+  </body>
+</html>

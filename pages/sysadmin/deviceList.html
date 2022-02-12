@@ -161,6 +161,25 @@
       </div>
     </div>
 
+    <!-- Device Remove Confirm Modal -->
+    <div class="remove_modal">
+      <div class="remove_content">
+        <div class="header">
+          <img src="../../images/sysadmin/warn.svg" alt="warn" />
+        </div>
+        <div class="content">
+          <div class="warn_info">
+            <h1>CZY NA PEWNO CHCESZ USUNĄĆ TO URZĄDZENIE?</h1>
+            <h4>To działanie jest nieodwracalne.</h4>
+          </div>
+          <div class="button_group">
+            <button class="cancel">ANULUJ</button>
+            <button class="agree">USUŃ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="wrapper custom_footer">
       <div id="copyright" class="hoc clear">
         <img src="../../images/logo.png" alt="logo" />
@@ -190,6 +209,19 @@
             // some code
           },
         });
+
+        // Removal Button Event on the Table
+        $("table tr td img").on("click", function () {
+          $(".remove_modal").show();
+        });
+        // Modal Agree Button Event 
+        $(".remove_modal .button_group .agree").on('click', function() {
+          $(".remove_modal").hide();
+        })
+        // Modal Cancel Button Event 
+        $(".remove_modal .button_group .cancel").on('click', function() {
+          $(".remove_modal").hide();
+        })
       });
     </script>
   </body>

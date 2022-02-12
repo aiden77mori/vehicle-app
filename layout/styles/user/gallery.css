@@ -253,10 +253,13 @@
 .modal__window {
   display: none;
   transition: 1s;
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  height: 150%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .modal__content {
@@ -265,6 +268,10 @@
   background: #ffffff;
   box-shadow: 0px 0px 40px #00000029;
   padding: 28px 41px 35px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .modal__header {

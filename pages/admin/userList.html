@@ -13,11 +13,12 @@
       type="text/css"
       media="all"
     />
-    <link rel="stylesheet" href="../../layout/styles/sysadmin/deviceList.css" />
+    <link rel="stylesheet" href="../../layout/styles/admin/userList.css" />
     <link rel="stylesheet" href="../../layout/styles/simplePagination.css" />
   </head>
 
   <body id="top">
+    <!-- Admin Topbar -->
     <div class="wrapper topbar">
       <div id="topbar" class="hoc clear">
         <div class="fl_left">
@@ -49,25 +50,34 @@
       </div>
     </div>
 
+    <!-- Admin Header -->
     <div class="wrapper header">
       <header id="header" class="hoc clear">
         <nav id="mainav">
           <ul class="clear">
             <li class="active">
-              <img src="../../images/sysadmin/add-user.png" alt="add-user" />
-              <a href="#">DODAJ NOWE KONTO</a>
+              <img src="../../images/admin/friends.png" alt="friends" />
+              <a class="drop" href="#">UŻYTKOWNICY</a>
+              <ul>
+                <li class="active">
+                  <a href="pages/gallery.html">dodaj nowego użytkownika</a>
+                </li>
+                <li><a href="pages/full-width.html">lista użytkowników</a></li>
+              </ul>
             </li>
             <li>
-              <img src="../../images/sysadmin/archive.png" alt="archive" />
+              <img src="../../images/admin/location.png" alt="location" />
               <a href="#">WSZYSTKIE KONTA</a>
+              <ul>
+                <li>
+                  <a href="pages/gallery.html">dodaj nowego użytkownika</a>
+                </li>
+                <li><a href="pages/full-width.html">lista użytkowników</a></li>
+              </ul>
             </li>
             <li>
-              <img src="../../images/sysadmin/setting.png" alt="setting" />
+              <img src="../../images/admin/setting.png" alt="setting" />
               <a href="#">URZĄDZENIA</a>
-            </li>
-            <li>
-              <img src="../../images/sysadmin/server.png" alt="server" />
-              <a href="#">SERWERY</a>
             </li>
           </ul>
         </nav>
@@ -85,71 +95,90 @@
           <table>
             <tr>
               <th style="width: 5%">LP</th>
-              <th style="width: 17%">NUMER SERYJNY</th>
-              <th style="width: 17%">NAZWA KONTA</th>
+              <th style="width: 17%">NAZWA / LOGIN</th>
+              <th style="width: 17%">IMIĘ I NAZWISKO</th>
+              <th style="width: 17%">EMAIL</th>
+              <th style="width: 17%">CZY ADMIN?</th>
               <th style="width: 17%">LOKALIZACJA</th>
-              <th style="width: 17%">DATA DODANIA</th>
               <th style="width: 10%">
                 <img src="../../images/sysadmin/setting.svg" alt="setting" />
               </th>
             </tr>
             <tr>
               <td>1</td>
-              <td>Merc</td>
-              <td>Mercedes Polska</td>
+              <td>Loginus</td>
               <td>Jan Kowalski</td>
-              <td>11.11.2022</td>
+              <td>jkowalski@mercedes.pl</td>
               <td>
+                <img src="../../images/admin/check.svg" alt="check" />
+              </td>
+              <td></td>
+              <td>
+                <img src="../../images/sysadmin/eye.svg" alt="eye" />
                 <img src="../../images/sysadmin/close.svg" alt="close" />
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Merc</td>
-              <td>Mercedes Polska</td>
+              <td>Loginus</td>
               <td>Jan Kowalski</td>
-              <td>11.11.2022</td>
+              <td>jkowalski@mercedes.pl</td>
+              <td></td>
+              <td>lokalizacja 1</td>
               <td>
+                <img src="../../images/sysadmin/eye.svg" alt="eye" />
                 <img src="../../images/sysadmin/close.svg" alt="close" />
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Merc</td>
-              <td>Mercedes Polska</td>
+              <td>Loginus</td>
               <td>Jan Kowalski</td>
-              <td>11.11.2022</td>
+              <td>jkowalski@mercedes.pl</td>
+              <td></td>
+              <td>lokalizacja 1</td>
               <td>
+                <img src="../../images/sysadmin/eye.svg" alt="eye" />
                 <img src="../../images/sysadmin/close.svg" alt="close" />
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Merc</td>
-              <td>Mercedes Polska</td>
+              <td>Loginus</td>
               <td>Jan Kowalski</td>
-              <td>11.11.2022</td>
+              <td>jkowalski@mercedes.pl</td>
               <td>
+                <img src="../../images/admin/check.svg" alt="check" />
+              </td>
+              <td></td>
+              <td>
+                <img src="../../images/sysadmin/eye.svg" alt="eye" />
                 <img src="../../images/sysadmin/close.svg" alt="close" />
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Merc</td>
-              <td>Mercedes Polska</td>
+              <td>Loginus</td>
               <td>Jan Kowalski</td>
-              <td>11.11.2022</td>
+              <td>jkowalski@mercedes.pl</td>
               <td>
+                <img src="../../images/admin/check.svg" alt="check" />
+              </td>
+              <td>lokalizacja 3</td>
+              <td>
+                <img src="../../images/sysadmin/eye.svg" alt="eye" />
                 <img src="../../images/sysadmin/close.svg" alt="close" />
               </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Merc</td>
-              <td>Mercedes Polska</td>
+              <td>Loginus</td>
               <td>Jan Kowalski</td>
-              <td>11.11.2022</td>
+              <td>jkowalski@mercedes.pl</td>
+              <td></td>
+              <td></td>
               <td>
+                <img src="../../images/sysadmin/eye.svg" alt="eye" />
                 <img src="../../images/sysadmin/close.svg" alt="close" />
               </td>
             </tr>
@@ -161,6 +190,7 @@
       </div>
     </div>
 
+    <!-- Footer -->
     <div class="wrapper custom_footer">
       <div id="copyright" class="hoc clear">
         <img src="../../images/logo.png" alt="logo" />

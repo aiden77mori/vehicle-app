@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>Vehicle</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      href="../../layout/styles/layout.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="../../layout/styles/sysadmin/deviceList.css" />
+    <link rel="stylesheet" href="../../layout/styles/simplePagination.css" />
+  </head>
+
+  <body id="top">
+    <div class="wrapper topbar">
+      <div id="topbar" class="hoc clear">
+        <div class="fl_left">
+          <div class="admin_logo">logo dealera</div>
+        </div>
+        <div class="fl_right">
+          <ul class="nospace">
+            <li>
+              <div class="topbar_date_box">
+                <h5 class="topbar_date">10:12</h5>
+                <h5 class="topbar_date">piątek 12.12.2021</h5>
+              </div>
+            </li>
+            <li>
+              <h3 class="topbar_username">Anatol Herubiński</h3>
+            </li>
+            <li>
+              <div class="user_box">
+                <img src="../../images/user.svg" alt="user" />
+              </div>
+            </li>
+            <li>
+              <div class="logout_box">
+                <img src="../../images/logout.svg" alt="logout" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper header">
+      <header id="header" class="hoc clear">
+        <nav id="mainav">
+          <ul class="clear">
+            <li class="active">
+              <img src="../../images/sysadmin/add-user.png" alt="add-user" />
+              <a href="#">DODAJ NOWE KONTO</a>
+            </li>
+            <li>
+              <img src="../../images/sysadmin/archive.png" alt="archive" />
+              <a href="#">WSZYSTKIE KONTA</a>
+            </li>
+            <li>
+              <img src="../../images/sysadmin/setting.png" alt="setting" />
+              <a href="#">URZĄDZENIA</a>
+            </li>
+            <li>
+              <img src="../../images/sysadmin/server.png" alt="server" />
+              <a href="#">SERWERY</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="wrapper">
+      <div id="deviceList" class="hoc clear">
+        <div class="deviceList_container">
+          <div class="searchBar">
+            <input type="text" />
+            <img src="../../images/sysadmin/search.svg" alt="search-icon" />
+          </div>
+          <div class="searchInfo">znaleziono: 222 pozycji</div>
+          <table>
+            <tr>
+              <th style="width: 5%">LP</th>
+              <th style="width: 17%">NUMER SERYJNY</th>
+              <th style="width: 17%">NAZWA KONTA </th>
+              <th style="width: 17%">LOKALIZACJA </th>
+              <th style="width: 17%">DATA DODANIA</th>
+              <th style="width: 10%">
+                <img src="../../images/sysadmin/setting.svg" alt="setting" />
+              </th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Merc</td>
+              <td>Mercedes Polska</td>
+              <td>Jan Kowalski</td>
+              <td>11.11.2022</td>
+              <td>
+                <img src="../../images/sysadmin/close.svg" alt="close" />
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Merc</td>
+              <td>Mercedes Polska</td>
+              <td>Jan Kowalski</td>
+              <td>11.11.2022</td>
+              <td>
+                <img src="../../images/sysadmin/close.svg" alt="close" />
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Merc</td>
+              <td>Mercedes Polska</td>
+              <td>Jan Kowalski</td>
+              <td>11.11.2022</td>
+              <td>
+                <img src="../../images/sysadmin/close.svg" alt="close" />
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Merc</td>
+              <td>Mercedes Polska</td>
+              <td>Jan Kowalski</td>
+              <td>11.11.2022</td>
+              <td>
+                <img src="../../images/sysadmin/close.svg" alt="close" />
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Merc</td>
+              <td>Mercedes Polska</td>
+              <td>Jan Kowalski</td>
+              <td>11.11.2022</td>
+              <td>
+                <img src="../../images/sysadmin/close.svg" alt="close" />
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Merc</td>
+              <td>Mercedes Polska</td>
+              <td>Jan Kowalski</td>
+              <td>11.11.2022</td>
+              <td>
+                <img src="../../images/sysadmin/close.svg" alt="close" />
+              </td>
+            </tr>
+          </table>
+          <div class="pagination">
+            <ul class="pagination simple-pagination" id="pagination"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper custom_footer">
+      <div id="copyright" class="hoc clear">
+        <img src="../../images/logo.png" alt="logo" />
+        <p>Wszelkie prawa zastrzeżone &copy; 2022</p>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPTS -->
+    <script src="../../layout/scripts/jquery.min.js"></script>
+    <script src="../../layout/scripts/jquery.backtotop.js"></script>
+    <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
+    <script src="../../layout/scripts/jquery.simplePagination.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#pagination").pagination({
+          items: 20,
+          itemOnPage: 8,
+          currentPage: 1,
+          cssStyle: "light-theme",
+          prevText: '<span aria-hidden="true"><</span>',
+          nextText: '<span aria-hidden="true">></span>',
+          onInit: function () {
+            // fire first page loading
+          },
+          onPageClick: function (page, evt) {
+            // some code
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

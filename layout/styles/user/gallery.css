@@ -7,11 +7,9 @@
 }
 
 .search_result_container {
-  /* padding: 0 150px; */
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 .search_result_container .left_side {
   display: flex;
@@ -105,7 +103,6 @@
   width: 832px;
 }
 
-
 .search_result_container .return_search_btn {
   height: 53px;
   background-color: #169fdb;
@@ -144,7 +141,7 @@
 
 .search_result_container .targetHeader {
   height: 81px;
-  background-color: #169FDB;
+  background-color: #169fdb;
   display: flex;
   align-items: center;
   padding: 0 50px 0 40px;
@@ -171,12 +168,16 @@
   width: 15px;
   height: 15px;
 }
-.search_result_container .targetContent .targetInnerContent::-webkit-scrollbar-track {
+.search_result_container
+  .targetContent
+  .targetInnerContent::-webkit-scrollbar-track {
   border-radius: 10px;
-  background-color: #E9E9E9;
+  background-color: #e9e9e9;
   background-clip: padding-box;
 }
-.search_result_container .targetContent .targetInnerContent::-webkit-scrollbar-thumb {
+.search_result_container
+  .targetContent
+  .targetInnerContent::-webkit-scrollbar-thumb {
   background: #707070;
   border-radius: 10px;
   background-clip: padding-box;
@@ -190,24 +191,24 @@
 .search_result_container .targetContent .rows .gallery_header {
   height: 37px;
   width: 100%;
-  display: flex; 
+  display: flex;
 }
 .search_result_container .targetContent .rows .gallery_header .number {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #169FDB;
+  background-color: #169fdb;
   width: 42px;
   height: 100%;
 }
 .search_result_container .targetContent .rows .gallery_header .number h4 {
   font-size: 16px;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 .search_result_container .targetContent .rows .gallery_header .time {
   display: flex;
   align-items: center;
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   width: 100%;
   height: 100%;
   padding-left: 20px;
@@ -246,4 +247,121 @@
   justify-content: space-between;
   margin-top: 30px;
   width: 100%;
+}
+
+/* Modal Box CSS */
+.modal__window {
+  display: none;
+  transition: 1s;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.modal__content {
+  max-width: 1057px;
+  width: 1057px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px #00000029;
+  padding: 28px 41px 35px 40px;
+}
+
+.modal__header {
+  height: 36px;
+}
+.modal__header img {
+  float: right;
+  cursor: pointer;
+}
+
+.modal__image {
+  height: 586px;
+  position: relative;
+}
+.modal__image .narrow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.modal__image .narrow img {
+  cursor: pointer;
+}
+.modal__image .content {
+  padding: 0 35px;
+  height: 100%;
+}
+.modal__image .content img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 27px;
+  margin-top: 53px;
+  padding: 0 35px;
+}
+.modal__footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.modal__footer div .img_box {
+  background: #2e2e2e;
+  width: 27px;
+  display: flex;
+  justify-content: center;
+}
+.modal__footer div .img_box img {
+  width: 16px;
+  height: 12px;
+}
+.modal__footer div .title_box {
+  background: #e9e9e9;
+  display: flex;
+  justify-content: center;
+}
+.modal__footer div .title_box h3 {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+}
+.modal__footer .car_name .title_box {
+  width: 141px;
+}
+.modal__footer .record_date .title_box {
+  width: 129px;
+}
+.modal__footer .record_time .title_box {
+  width: 111px;
+}
+.modal__footer .image_name .title_box {
+  width: 121px;
+}
+.modal__footer .modal_btn {
+  background: #169fdb;
+  cursor: pointer;
+}
+.modal__footer .modal_btn h3 {
+  color: #fff;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.modal__footer .download_btn {
+  width: 116px;
+}
+.modal__footer .download_btn img {
+  width: 27px;
+  height: 17px;
+}
+.modal__footer .return_btn {
+  width: 123px;
 }

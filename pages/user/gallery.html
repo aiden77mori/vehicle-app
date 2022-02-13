@@ -371,6 +371,11 @@
 
     <script>
       $(document).ready(function () {
+        // Return Button Event 
+        $(".return_search_btn").on('click', function() {
+          window.location.href = './search.html';
+        })
+
         // Open Modal
         $(".car").on("click", function () {
           $(".modal__window").show();

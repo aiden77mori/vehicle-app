@@ -45,6 +45,9 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+.search_card .search_btn:hover {
+  background: #2E2E2E;
+}
 .search_header {
   width: 552px;
   height: 59px;
@@ -71,6 +74,7 @@
   align-items: center;
   justify-content: center;
   background: rgb(218, 15, 55);
+  visibility: hidden;
 }
 .search_alert .alert_content {
   color: #fff;

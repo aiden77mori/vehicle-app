@@ -67,6 +67,9 @@
   justify-content: space-around;
   cursor: pointer;
 }
+.search_result_container .return_search_btn:hover {
+  background: #2E2E2E;
+}
 .search_result_container .return_search_btn p {
   font-size: 18px;
   color: #fff;
@@ -127,4 +130,8 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.search_result_container .list_box .list_content li:hover {
+  background: rgba(0, 0, 0, .28);
+  color: #FFFFFF;
 }

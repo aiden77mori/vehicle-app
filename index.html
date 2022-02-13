@@ -24,12 +24,20 @@
           <div class="login_box">
             <h2 class="login_heading">WITAJ W SYSTEMIE CAR EYE</h2>
             <div class="login_card">
-              <input type="text" placeholder="login" class="login_form">
-              <input type="text" placeholder="hasło" class="login_form">
+              <input
+                type="text"
+                placeholder="login"
+                class="login_form username"
+              />
+              <input
+                type="text"
+                placeholder="hasło"
+                class="login_form password"
+              />
               <button class="login_button">wyszukaj</button>
             </div>
             <div class="login_alert">
-              <img src="./images/login/alert.svg" alt="alert_icon">
+              <img src="./images/login/alert.svg" alt="alert_icon" />
               <p class="alert_content">Błędny login lub hasło.</p>
             </div>
             <h3 class="login_footer">Nie pamiętam hasła</h3>
@@ -42,5 +50,39 @@
     <script src="layout/scripts/jquery.min.js"></script>
     <script src="layout/scripts/jquery.backtotop.js"></script>
     <script src="layout/scripts/jquery.mobilemenu.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Forgot password event
+        $(".login_footer").on("click", function () {
+          window.location.href = "./recovery.html";
+        });
+
+        // Login Button Event
+        $(".login_button").on("click", function () {
+          if ($(".username").val() && $(".password").val()) {
+            var username = $(".username").val();
+            var password = $(".password").val();
+            switch (username) {
+              case "user":
+                window.location.href = "./pages/user/search.html";
+                break;
+              case "admin":
+                window.location.href = "./";
+                break;
+              case "sysadmin":
+                window.location.href = "./";
+                break;
+              default:
+                window.location.href = "./";
+                break;
+            }
+          } else {
+            $(".login_alert").css("visibility", "visible");
+            $(".login_footer").show();
+          }
+        });
+      });
+    </script>
   </body>
 </html>

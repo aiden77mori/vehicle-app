@@ -120,5 +120,19 @@
     <script src="../../layout/scripts/jquery.min.js"></script>
     <script src="../../layout/scripts/jquery.backtotop.js"></script>
     <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        // Return Button Event
+        $(".return_search_btn").on('click', function() {
+          window.location.href = './search.html';
+        });
+
+        // Item Click Event
+        $(".list_box .list_content li").on('click', function() {
+          window.location.href = './gallery.html';
+        })
+      })
+    </script>
   </body>
 </html>

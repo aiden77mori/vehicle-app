@@ -39,6 +39,9 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+.login_card .login_button:hover {
+  background: #2E2E2E;
+}
 .login_heading {
   font-size: 25px;
   margin-bottom: 44px !important;
@@ -48,6 +51,8 @@
   font-size: 16px;
   margin-top: 22px !important;
   color: #000000;
+  cursor: pointer;
+  display: none;
 }
 .login_alert {
   width: 100%;
@@ -56,6 +61,7 @@
   align-items: center;
   justify-content: center;
   background: rgb(218, 15, 55);
+  visibility: hidden;
 }
 .login_alert .alert_content {
   color: #fff;

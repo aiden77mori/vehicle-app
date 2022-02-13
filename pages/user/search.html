@@ -59,14 +59,14 @@
             <input
               type="text"
               placeholder="numer rejestracyjny pojazdu"
-              class="search_form"
+              class="search_form regi_num"
             />
             <p class="search_middle">lub</p>
             <div class="form_calender">
               <input
                 type="text"
                 placeholder="data wizyty (dd-mm-rrrr)"
-                class="search_form"
+                class="search_form visit_date"
               />
               <img
                 src="../../images/user/calendar-alt.svg"
@@ -86,10 +86,8 @@
 
     <div class="wrapper custom_footer">
       <div id="copyright" class="hoc clear">
-        <img src="../../images/logo.png" alt="logo">
-        <p>
-          Wszelkie prawa zastrzeżone &copy; 2022
-        </p>
+        <img src="../../images/logo.png" alt="logo" />
+        <p>Wszelkie prawa zastrzeżone &copy; 2022</p>
       </div>
     </div>
 
@@ -97,5 +95,18 @@
     <script src="../../layout/scripts/jquery.min.js"></script>
     <script src="../../layout/scripts/jquery.backtotop.js"></script>
     <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Button Event
+        $(".search_btn").on("click", function () {
+          var regi_num = $(".regi_num").val();
+          var visit_date = $(".visit_date").val();
+          if (regi_num && visit_date)
+            window.location.href = "./searchResult.html";
+          else $(".search_alert").css("visibility", "visible");
+        });
+      });
+    </script>
   </body>
 </html>

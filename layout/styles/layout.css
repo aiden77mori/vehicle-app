@@ -9,14 +9,35 @@
   src: url(./fonts/Montserrat-Regular.ttf);
 }
 
-body {
+body, h1, h2, h3, h4, h5, h6, p {
   font-family: Montserrat;
 }
 
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
-#topbar {
+/* #topbar {
   padding: 20px 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+.user_topbar {
+  padding: 20px 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.admin_topbar {
+  padding: 20px 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sysadmin_topbar {
+  padding: 0 0 8px 0;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -36,6 +57,14 @@ body {
   justify-content: center;
   font-size: 14px;
   color: #000000;
+}
+.topbar .fl_left .sysadmin_logo {
+  width: 111px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .topbar .fl_right li .user_box {
   width: 43px;

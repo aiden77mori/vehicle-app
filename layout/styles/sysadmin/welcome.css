@@ -34,10 +34,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 28px;
+
 }
-.welcome_card .top_box {
-  margin-bottom: 40px;
+.welcome_card .report_btn {
+  height: 67px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2E2E2E;
+  cursor: pointer;
 }
+.welcome_card .report_btn h4 {
+  color: #fff;
+  padding: 0 30px;
+  font-size: 20px;
+}
+
 .welcome_card .welcome_box .welcome_box_btn {
   width: 47%;
   height: 186px;

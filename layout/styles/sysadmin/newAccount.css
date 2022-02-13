@@ -60,3 +60,6 @@
   color: #fff;
   cursor: pointer;
 }
+.newAccount_btn:hover {
+  background: #2E2E2E;
+}

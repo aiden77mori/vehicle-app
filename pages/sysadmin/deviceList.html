@@ -19,9 +19,11 @@
 
   <body id="top">
     <div class="wrapper topbar">
-      <div id="topbar" class="hoc clear">
+      <div id="topbar" class="hoc clear sysadmin_topbar">
         <div class="fl_left">
-          <div class="admin_logo">logo dealera</div>
+          <div class="sysadmin_logo">
+            <img src="../../images/logo.png" alt="sysadmin_logo" />
+          </div>
         </div>
         <div class="fl_right">
           <ul class="nospace">
@@ -53,21 +55,21 @@
       <header id="header" class="hoc clear">
         <nav id="mainav">
           <ul class="clear">
-            <li class="active">
+            <li>
               <img src="../../images/sysadmin/add-user.png" alt="add-user" />
-              <a href="#">DODAJ NOWE KONTO</a>
+              <a href="./newAccount.html">DODAJ NOWE KONTO</a>
             </li>
             <li>
               <img src="../../images/sysadmin/archive.png" alt="archive" />
-              <a href="#">WSZYSTKIE KONTA</a>
+              <a href="./accountList.html">WSZYSTKIE KONTA</a>
             </li>
-            <li>
+            <li class="active">
               <img src="../../images/sysadmin/setting.png" alt="setting" />
-              <a href="#">URZĄDZENIA</a>
+              <a href="./deviceList.html">URZĄDZENIA</a>
             </li>
             <li>
               <img src="../../images/sysadmin/server.png" alt="server" />
-              <a href="#">SERWERY</a>
+              <a href="./serverList.html">SERWERY</a>
             </li>
           </ul>
         </nav>
@@ -214,14 +216,14 @@
         $("table tr td img").on("click", function () {
           $(".remove_modal").show();
         });
-        // Modal Agree Button Event 
-        $(".remove_modal .button_group .agree").on('click', function() {
+        // Modal Agree Button Event
+        $(".remove_modal .button_group .agree").on("click", function () {
           $(".remove_modal").hide();
-        })
-        // Modal Cancel Button Event 
-        $(".remove_modal .button_group .cancel").on('click', function() {
+        });
+        // Modal Cancel Button Event
+        $(".remove_modal .button_group .cancel").on("click", function () {
           $(".remove_modal").hide();
-        })
+        });
       });
     </script>
   </body>

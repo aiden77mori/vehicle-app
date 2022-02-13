@@ -18,9 +18,12 @@
 
   <body id="top">
     <div class="wrapper topbar">
-      <div id="topbar" class="hoc clear">
+      <div id="topbar" class="hoc clear sysadmin_topbar">
         <div class="fl_left">
-          <div class="admin_logo">logo dealera</div>
+          <!-- <div class="admin_logo">logo dealera</div> -->
+          <div class="sysadmin_logo">
+            <img src="../../images/logo.png" alt="sysadmin_logo">
+          </div>
         </div>
         <div class="fl_right">
           <ul class="nospace">
@@ -75,6 +78,10 @@
                 <h2 class="box_title">ZARZĄDZAJ SERWERAMI</h2>
               </div>
             </div>
+            <div class="report_btn">
+              <img src="../../images/sysadmin/report.svg" alt="report-icon">
+              <h4>RAPORTY</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -93,5 +100,29 @@
     <script src="../../layout/scripts/jquery.min.js"></script>
     <script src="../../layout/scripts/jquery.backtotop.js"></script>
     <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        // Add User Button Event
+        $(".add-user").on('click', function() {
+          window.location.href = './newAccount.html';
+        });
+
+        // User List Button Event
+        $(".achieve").on('click', function() {
+          window.location.href = './accountList.html';
+        });
+
+        // Setting Button Event
+        $(".setting").on('click', function() {
+          window.location.href = './deviceList.html';
+        });
+
+        // Server Button Event
+        $(".server").on('click', function() {
+          window.location.href = './serverList.html';
+        })
+      })
+    </script>
   </body>
 </html>

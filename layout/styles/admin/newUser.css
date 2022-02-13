@@ -56,6 +56,7 @@
   justify-content: space-between;
 }
 #newAccount .popup {
+  display: none;
   width: 265px;
   height: 195px;
   background-color: #fff;
@@ -85,7 +86,12 @@
 #newAccount .popup div {
   padding: 8px;
   color: #000;
+  cursor: pointer;
 }
+#newAccount .popup div:hover {
+  background: #E9E9E9;
+}
+
 .newAccount_card .content p {
   color: #000000;
 }

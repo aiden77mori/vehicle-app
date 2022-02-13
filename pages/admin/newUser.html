@@ -154,6 +154,21 @@
         var top = $(".selectBox").position().top;
         var width = $(".selectBox")[0].offsetWidth;
         $(".popup").css({ top: top, left: left + width + 10 });
+
+        // Location Select Box Event
+        $(".selectBox").on("click", function () {
+          if ($(".switch input").is(":checked") !== true)
+            $("#newAccount .popup").toggle();
+        });
+
+        // Check Box Event
+        $(".checkBox .switch").on("change", function () {
+          if ($(".switch input").is(":checked") === true) {
+            $(".selectBox").css({ background: "#949494", opacity: ".21" });
+          } else {
+            $(".selectBox").css({ background: "#fff", opacity: "1" });
+          }
+        });
       });
     </script>
   </body>

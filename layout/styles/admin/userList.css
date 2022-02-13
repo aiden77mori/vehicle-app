@@ -1,11 +1,11 @@
-#deviceList {
+#userList {
   height: 100vh;
   display: flex;
   justify-content: center;
   padding: 0 20px;
 }
 
-.deviceList_container {
+.userList_container {
   width: 100%;
   display: flex;
   flex-direction: column;

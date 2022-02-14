@@ -62,3 +62,6 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+.recovery_box .recovery_card .recovery_btn:hover {
+  background: #2E2E2E;
+}

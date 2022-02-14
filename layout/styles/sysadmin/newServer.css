@@ -135,3 +135,6 @@ input:checked + .slider:before {
   color: #fff;
   cursor: pointer;
 }
+.newServer_btn:hover {
+  background: #2e2e2e;
+}

@@ -27,6 +27,9 @@
   float: right;
   cursor: pointer;
 }
+.addServer-btn:hover {
+  background: #2e2e2e;
+}
 .addServer-btn h2 {
   padding: 0 10px;
   color: #fff;

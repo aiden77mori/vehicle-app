@@ -25,10 +25,6 @@
   justify-content: center;
   background: #169fdb;
 }
-.newAccount_card .header img {
-  /* width: 33px; */
-  /* height: 33px; */
-}
 .newAccount_card .header p {
   padding: 0 17px;
   color: #fff;
@@ -174,4 +170,7 @@ input:checked + .slider:before {
   border: none;
   color: #fff;
   cursor: pointer;
+}
+.newAccount_btn:hover {
+  background: #2E2E2E;
 }

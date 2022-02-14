@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2E2E2E;
+  background: #2e2e2e;
 }
 .welcome_header .welcome_header_content {
   color: #fff;
@@ -41,9 +41,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} 
+}
 .welcome_card .welcome_box .welcome_box_btn .btn_top .box_title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   text-align: center;
   margin-top: 15px;
@@ -72,6 +72,9 @@
   justify-content: center;
   align-items: center;
 }
+.welcome_card .welcome_box .welcome_box_btn .btn_bottom div:hover {
+  background: rgba(0, 0, 0, 0.13);
+}
 .welcome_card .welcome_box .welcome_box_btn .btn_bottom .btn_bottom_right {
   display: flex;
   justify-content: center;
@@ -82,11 +85,11 @@
   height: 40px;
 }
 .welcome_card .welcome_box .user {
-  background-color: #65D0FF;
+  background-color: #65d0ff;
 }
 .welcome_card .welcome_box .location {
-  background-color: #169FDB;
+  background-color: #169fdb;
 }
 .welcome_card .welcome_box .devices {
-  background-color: #0071A9;
+  background-color: #0071a9;
 }

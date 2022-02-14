@@ -33,7 +33,7 @@
               </div>
             </li>
             <li>
-              <h3 class="topbar_username">Anatol Herubiński</h3>
+              <h3 class="topbar_username">Administrator</h3>
             </li>
             <li>
               <div class="user_box">
@@ -55,29 +55,31 @@
       <header id="header" class="hoc clear">
         <nav id="mainav">
           <ul class="clear">
-            <li class="active">
+            <li>
               <img src="../../images/admin/friends.png" alt="friends" />
               <a class="drop" href="#">UŻYTKOWNICY</a>
               <ul>
-                <li class="active">
-                  <a href="pages/gallery.html">dodaj nowego użytkownika</a>
+                <li>
+                  <a href="./newUser.html">dodaj nowego użytkownika</a>
                 </li>
-                <li><a href="pages/full-width.html">lista użytkowników</a></li>
+                <li><a href="./userList.html">lista użytkowników</a></li>
               </ul>
             </li>
-            <li>
+            <li class="active">
               <img src="../../images/admin/location.png" alt="location" />
               <a href="#">WSZYSTKIE KONTA</a>
               <ul>
                 <li>
-                  <a href="pages/gallery.html">dodaj nowego użytkownika</a>
+                  <a href="./newLocation.html">dodaj nowego użytkownika</a>
                 </li>
-                <li><a href="pages/full-width.html">lista użytkowników</a></li>
+                <li class="active">
+                  <a href="./locationList.html">lista użytkowników</a>
+                </li>
               </ul>
             </li>
             <li>
               <img src="../../images/admin/setting.png" alt="setting" />
-              <a href="#">URZĄDZENIA</a>
+              <a href="./deviceList.html">URZĄDZENIA</a>
             </li>
           </ul>
         </nav>
@@ -93,10 +95,10 @@
               <img src="../../images/sysadmin/search.svg" alt="search-icon" />
             </div>
             <div class="add_btn">
-              <img src="../../images/admin/add.svg" alt="add">
+              <img src="../../images/admin/add.svg" alt="add" />
             </div>
           </div>
-          
+
           <div class="searchInfo">znaleziono: 111 pozycji</div>
           <table>
             <tr>
@@ -112,8 +114,16 @@
               <td>Nazwa lokalizacji</td>
               <td>11.11.2022</td>
               <td>
-                <img src="../../images/sysadmin/eye.svg" alt="eye" />
-                <img src="../../images/sysadmin/close.svg" alt="close" />
+                <img
+                  src="../../images/sysadmin/eye.svg"
+                  class="view_btn"
+                  alt="eye"
+                />
+                <img
+                  src="../../images/sysadmin/close.svg"
+                  class="remove_btn"
+                  alt="close"
+                />
               </td>
             </tr>
             <tr>
@@ -121,8 +131,16 @@
               <td>Nazwa lokalizacji</td>
               <td>11.11.2022</td>
               <td>
-                <img src="../../images/sysadmin/eye.svg" alt="eye" />
-                <img src="../../images/sysadmin/close.svg" alt="close" />
+                <img
+                  src="../../images/sysadmin/eye.svg"
+                  class="view_btn"
+                  alt="eye"
+                />
+                <img
+                  src="../../images/sysadmin/close.svg"
+                  class="remove_btn"
+                  alt="close"
+                />
               </td>
             </tr>
             <tr>
@@ -130,8 +148,16 @@
               <td>Nazwa lokalizacji</td>
               <td>11.11.2022</td>
               <td>
-                <img src="../../images/sysadmin/eye.svg" alt="eye" />
-                <img src="../../images/sysadmin/close.svg" alt="close" />
+                <img
+                  src="../../images/sysadmin/eye.svg"
+                  class="view_btn"
+                  alt="eye"
+                />
+                <img
+                  src="../../images/sysadmin/close.svg"
+                  class="remove_btn"
+                  alt="close"
+                />
               </td>
             </tr>
             <tr>
@@ -139,8 +165,16 @@
               <td>Nazwa lokalizacji</td>
               <td>11.11.2022</td>
               <td>
-                <img src="../../images/sysadmin/eye.svg" alt="eye" />
-                <img src="../../images/sysadmin/close.svg" alt="close" />
+                <img
+                  src="../../images/sysadmin/eye.svg"
+                  class="view_btn"
+                  alt="eye"
+                />
+                <img
+                  src="../../images/sysadmin/close.svg"
+                  class="remove_btn"
+                  alt="close"
+                />
               </td>
             </tr>
             <tr>
@@ -148,8 +182,16 @@
               <td>Nazwa lokalizacji</td>
               <td>11.11.2022</td>
               <td>
-                <img src="../../images/sysadmin/eye.svg" alt="eye" />
-                <img src="../../images/sysadmin/close.svg" alt="close" />
+                <img
+                  src="../../images/sysadmin/eye.svg"
+                  class="view_btn"
+                  alt="eye"
+                />
+                <img
+                  src="../../images/sysadmin/close.svg"
+                  class="remove_btn"
+                  alt="close"
+                />
               </td>
             </tr>
             <tr>
@@ -157,8 +199,16 @@
               <td>Nazwa lokalizacji</td>
               <td>11.11.2022</td>
               <td>
-                <img src="../../images/sysadmin/eye.svg" alt="eye" />
-                <img src="../../images/sysadmin/close.svg" alt="close" />
+                <img
+                  src="../../images/sysadmin/eye.svg"
+                  class="view_btn"
+                  alt="eye"
+                />
+                <img
+                  src="../../images/sysadmin/close.svg"
+                  class="remove_btn"
+                  alt="close"
+                />
               </td>
             </tr>
           </table>
@@ -199,6 +249,11 @@
             // some code
           },
         });
+
+        // View Button Event
+        $('.view_btn').on('click', function() {
+          window.location.href = './locationDetail.html';
+        })
       });
     </script>
   </body>

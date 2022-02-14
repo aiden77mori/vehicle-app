@@ -50,6 +50,9 @@
   margin-left: 13px;
   cursor: pointer;
 }
+.add_btn:hover {
+  background: #2e2e2e;
+}
 
 .searchInfo {
   margin-bottom: 16px;

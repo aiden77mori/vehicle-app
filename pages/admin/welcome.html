@@ -31,7 +31,7 @@
               </div>
             </li>
             <li>
-              <h3 class="topbar_username">Anatol Herubiński</h3>
+              <h3 class="topbar_username">Administrator</h3>
             </li>
             <li>
               <div class="user_box">
@@ -66,10 +66,10 @@
                   <h2 class="box_title">UŻYTKOWNICY</h2>
                 </div>
                 <div class="btn_bottom">
-                  <div class="btn_bottom_left">
+                  <div class="btn_bottom_left new_user_btn">
                     <img src="../../images/admin/add.svg" alt="add" />
                   </div>
-                  <div class="btn_bottom_right">
+                  <div class="btn_bottom_right user_list_btn">
                     <img src="../../images/admin/list.svg" alt="list" />
                   </div>
                 </div>
@@ -85,10 +85,10 @@
                   <h2 class="box_title">LOKALIZACJE</h2>
                 </div>
                 <div class="btn_bottom">
-                  <div class="btn_bottom_left">
+                  <div class="btn_bottom_left new_location_btn">
                     <img src="../../images/admin/add.svg" alt="add" />
                   </div>
-                  <div class="btn_bottom_right">
+                  <div class="btn_bottom_right location_list_btn">
                     <img src="../../images/admin/list.svg" alt="list" />
                   </div>
                 </div>
@@ -104,10 +104,10 @@
                   <h2 class="box_title">URZĄDZENIA</h2>
                 </div>
                 <div class="btn_bottom">
-                  <div class="btn_bottom_left">
+                  <div class="btn_bottom_left new_device_btn">
                     <img src="../../images/admin/add.svg" alt="add" />
                   </div>
-                  <div class="btn_bottom_right">
+                  <div class="btn_bottom_right device_list_btn">
                     <img src="../../images/admin/list.svg" alt="list" />
                   </div>
                 </div>
@@ -131,5 +131,36 @@
     <script src="../../layout/scripts/jquery.min.js"></script>
     <script src="../../layout/scripts/jquery.backtotop.js"></script>
     <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        // Add User Button Event
+        $('.new_user_btn').on('click', function() {
+          window.location.href = './newUser.html';
+        })
+        // User List Button Event
+        $('.user_list_btn').on('click', function() {
+          window.location.href = './userList.html';
+        })
+
+        // Add Location Button Event
+        $('.new_location_btn').on('click', function() {
+          window.location.href = './newLocation.html';
+        })
+        // Location List Button Event
+        $('.location_list_btn').on('click', function() {
+          window.location.href = './locationList.html';
+        })
+
+        // Add Device Button Event
+        $('.new_device_btn').on('click', function() {
+          alert('new device btn');
+        })
+        // Device List Button Event
+        $('.device_list_btn').on('click', function() {
+          window.location.href = './deviceList.html';
+        })
+      })
+    </script>
   </body>
 </html>

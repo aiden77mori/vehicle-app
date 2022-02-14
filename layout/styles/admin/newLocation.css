@@ -50,3 +50,6 @@
   color: #fff;
   cursor: pointer;
 }
+.newLocation_btn:hover {
+  background: #2E2E2E;
+}

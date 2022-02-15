@@ -34,7 +34,7 @@
                 placeholder="hasło"
                 class="login_form password"
               />
-              <button class="login_button">wyszukaj</button>
+              <button class="login_button">ZALOGUJ</button>
             </div>
             <div class="login_alert">
               <img src="./images/login/alert.svg" alt="alert_icon" />
@@ -56,6 +56,13 @@
         // Forgot password event
         $(".login_footer").on("click", function () {
           window.location.href = "./recovery.html";
+        });
+
+        // Login Button Key Event
+        $(document).on("keypress", function (e) {
+          if (e.keyCode == 13) {
+            $(".login_button").click();
+          }
         });
 
         // Login Button Event

@@ -1,10 +1,10 @@
-#deviceList {
+#reportList {
   display: flex;
   justify-content: center;
   padding: 0 20px;
 }
 
-.deviceList_container {
+.reportList_container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,12 +12,26 @@
 }
 
 .searchBar {
-  position: relative;
   height: 53px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-bottom: 8px;
+}
+.searchBar .search_input {
+  height: 100%;
+  position: relative;
+}
+.searchBar button {
+  height: 100%;
+  width: 200px;
+  background: #169fdb;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+}
+.searchBar button:hover {
+  background: #2e2e2e;
 }
 .searchBar input {
   width: 310px;
@@ -28,6 +42,8 @@
 .searchBar img {
   position: absolute;
   right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .searchInfo {

@@ -17,115 +17,124 @@
   </head>
 
   <body id="top">
-    <div class="wrapper topbar">
-      <div id="topbar" class="hoc clear sysadmin_topbar">
-        <div class="fl_left">
-          <div class="sysadmin_logo">
-            <img src="../../images/logo.png" alt="sysadmin_logo" />
-          </div>
-        </div>
-        <div class="fl_right">
-          <ul class="nospace">
-            <li>
-              <div class="topbar_date_box">
-                <h5 class="topbar_date">10:12</h5>
-                <h5 class="topbar_date">piątek 12.12.2021</h5>
-              </div>
-            </li>
-            <li>
-              <h3 class="topbar_username">Super Admin</h3>
-            </li>
-            <li>
-              <div class="user_box">
-                <img src="../../images/user.svg" alt="user" />
-              </div>
-            </li>
-            <li>
-              <div class="logout_box">
-                <img src="../../images/logout.svg" alt="logout" />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="wrapper header">
-      <header id="header" class="hoc clear">
-        <nav id="mainav">
-          <ul class="clear">
-            <li>
-              <img src="../../images/sysadmin/add-user.png" alt="add-user" />
-              <a href="./newAccount.html">DODAJ NOWE KONTO</a>
-            </li>
-            <li>
-              <img src="../../images/sysadmin/archive.png" alt="archive" />
-              <a href="./accountList.html">WSZYSTKIE KONTA</a>
-            </li>
-            <li>
-              <img src="../../images/sysadmin/setting.png" alt="setting" />
-              <a href="./deviceList.html">URZĄDZENIA</a>
-            </li>
-            <li class="active">
-              <img src="../../images/sysadmin/server.png" alt="server" />
-              <a href="./serverList.html">SERWERY</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-
-    <div class="wrapper main_content">
-      <div id="newServer" class="hoc clear">
-        <div class="newServer_container">
-          <div class="newServer_card">
-            <div class="header">
-              <img
-                src="../../images/sysadmin/newServer-icon.svg"
-                alt="new-server-icon"
-              />
-              <p class="search_header_content">DODAWANIE NOWEGO SERWERA</p>
-            </div>
-            <div class="content">
-              <input
-                type="text"
-                placeholder="Nazwa serwera"
-                class="newServer_form"
-              />
-              <input
-                type="text"
-                placeholder="Adres URL"
-                class="newServer_form"
-              />
-              <input type="text" placeholder="Bucket" class="newServer_form" />
-              <input
-                type="text"
-                placeholder="Access key ID"
-                class="newServer_form"
-              />
-              <input
-                type="text"
-                placeholder="Secret access key"
-                class="newServer_form"
-              />
-              <div class="newServer_form checkBox">
-                <p class="title">Zapis</p>
-                <label class="switch">
-                  <input type="checkbox" />
-                  <span class="slider round"></span>
-                </label>
-              </div>
+    <div class="full-content">
+      <div class="wrapper topbar">
+        <div id="topbar" class="hoc clear sysadmin_topbar">
+          <div class="fl_left">
+            <div class="sysadmin_logo">
+              <img src="../../images/logo.png" alt="sysadmin_logo" />
             </div>
           </div>
-          <button class="newServer_btn">DODAJ SERWER</button>
+          <div class="fl_right">
+            <ul class="nospace">
+              <li>
+                <div class="topbar_date_box">
+                  <h5 class="topbar_date">10:12</h5>
+                  <h5 class="topbar_date">piątek 12.12.2021</h5>
+                </div>
+              </li>
+              <li>
+                <h3 class="topbar_username">Super Admin</h3>
+              </li>
+              <li>
+                <div class="user_box">
+                  <img src="../../images/user.svg" alt="user" />
+                </div>
+              </li>
+              <li>
+                <div class="logout_box">
+                  <img src="../../images/logout.svg" alt="logout" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wrapper header">
+          <header id="header" class="hoc clear">
+            <nav id="mainav">
+              <ul class="clear">
+                <li>
+                  <img
+                    src="../../images/sysadmin/add-user.png"
+                    alt="add-user"
+                  />
+                  <a href="./newAccount.html">DODAJ NOWE KONTO</a>
+                </li>
+                <li>
+                  <img src="../../images/sysadmin/archive.png" alt="archive" />
+                  <a href="./accountList.html">WSZYSTKIE KONTA</a>
+                </li>
+                <li>
+                  <img src="../../images/sysadmin/setting.png" alt="setting" />
+                  <a href="./deviceList.html">URZĄDZENIA</a>
+                </li>
+                <li class="active">
+                  <img src="../../images/sysadmin/server.png" alt="server" />
+                  <a href="./serverList.html">SERWERY</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
         </div>
       </div>
-    </div>
 
-    <div class="wrapper custom_footer">
-      <div id="copyright" class="hoc clear">
-        <img src="../../images/logo.png" alt="logo" />
-        <p>Wszelkie prawa zastrzeżone &copy; 2022</p>
+      <div class="wrapper main_content">
+        <div id="newServer" class="hoc clear">
+          <div class="newServer_container">
+            <div class="newServer_card">
+              <div class="header">
+                <img
+                  src="../../images/sysadmin/newServer-icon.svg"
+                  alt="new-server-icon"
+                />
+                <p class="search_header_content">DODAWANIE NOWEGO SERWERA</p>
+              </div>
+              <div class="content">
+                <input
+                  type="text"
+                  placeholder="Nazwa serwera"
+                  class="newServer_form"
+                />
+                <input
+                  type="text"
+                  placeholder="Adres URL"
+                  class="newServer_form"
+                />
+                <input
+                  type="text"
+                  placeholder="Bucket"
+                  class="newServer_form"
+                />
+                <input
+                  type="text"
+                  placeholder="Access key ID"
+                  class="newServer_form"
+                />
+                <input
+                  type="text"
+                  placeholder="Secret access key"
+                  class="newServer_form"
+                />
+                <div class="newServer_form checkBox">
+                  <p class="title">Zapis</p>
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button class="newServer_btn">DODAJ SERWER</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper custom_footer">
+        <div id="copyright" class="hoc clear">
+          <img src="../../images/logo.png" alt="logo" />
+          <p>Wszelkie prawa zastrzeżone &copy; 2022</p>
+        </div>
       </div>
     </div>
 
@@ -133,14 +142,15 @@
     <script src="../../layout/scripts/jquery.min.js"></script>
     <script src="../../layout/scripts/jquery.backtotop.js"></script>
     <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
+    <script src="../../layout/scripts/global.js"></script>
 
     <script>
-      $(document).ready(function() {
-        // Logout Button Event 
-        $('.logout_box').on('click', function() {
-          window.location.href = '../../index.html';
-        })
-      })
+      $(document).ready(function () {
+        // Logout Button Event
+        $(".logout_box").on("click", function () {
+          window.location.href = "../../index.html";
+        });
+      });
     </script>
   </body>
 </html>

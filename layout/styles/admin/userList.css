@@ -1,5 +1,4 @@
 #userList {
-  height: 100vh;
   display: flex;
   justify-content: center;
   padding: 0 20px;
@@ -10,12 +9,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: flex-end; */
 }
 
 .searchBar {
   position: relative;
-  /* width: 310px; */
   height: 53px;
   display: flex;
   align-items: center;

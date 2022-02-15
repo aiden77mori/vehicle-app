@@ -24,6 +24,74 @@ input {
   color: #000;
 }
 
+/* User Modify Modal */
+.user_modal_container {
+  display: none;
+  transition: 1s;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.21);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal_content {
+  width: 552px;
+  background-color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.modal_content .modal_header {
+  height: 59px;
+  background: #d90024;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal_content .modal_header p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.modal_content .modal_card {
+  padding: 38px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #E9E9E9;
+}
+.modal_content .modal_card input {
+  width: 100%;
+  height: 53px;
+  margin-bottom: 15px;
+  padding-left: 26px;
+  padding-right: 23px;
+  border: none;
+}
+.modal_content .modal_footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 44px;
+}
+.modal_content .modal_footer button {
+  width: 141px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.modal_content .modal_footer .cancel {
+  background: #2e2e2e;
+}
+.modal_content .modal_footer .agree {
+  background: #169fdb;
+}
+
+
+
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
 /* #topbar {
@@ -33,6 +101,12 @@ input {
   align-items: center;
   justify-content: space-between;
 } */
+.full-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 .user_topbar {
   padding: 20px 0;
   background-color: #fff;

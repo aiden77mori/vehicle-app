@@ -1,11 +1,9 @@
 #search {
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 .welcome_container {
-  padding: 130px 50px;
   width: 100%;
   display: flex;
   flex-direction: column;

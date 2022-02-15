@@ -1,9 +1,7 @@
 .main_content {
-  padding: 100px 0;
 }
 
 #newServer {
-  height: 100vh;
   display: flex;
   justify-content: center;
 }

@@ -18,212 +18,214 @@
   </head>
 
   <body id="top">
-    <!-- Admin Topbar -->
-    <div class="wrapper topbar">
-      <div id="topbar" class="hoc clear admin_topbar">
-        <div class="fl_left">
-          <div class="admin_logo">logo dealera</div>
+    <div class="full-content">
+      <div class="wrapper topbar">
+        <!-- Admin Topbar -->
+        <div id="topbar" class="hoc clear admin_topbar">
+          <div class="fl_left">
+            <div class="admin_logo">logo dealera</div>
+          </div>
+          <div class="fl_right">
+            <ul class="nospace">
+              <li>
+                <div class="topbar_date_box">
+                  <h5 class="topbar_date">10:12</h5>
+                  <h5 class="topbar_date">piątek 12.12.2021</h5>
+                </div>
+              </li>
+              <li>
+                <h3 class="topbar_username">Administrator</h3>
+              </li>
+              <li>
+                <div class="user_box">
+                  <img src="../../images/user.svg" alt="user" />
+                </div>
+              </li>
+              <li>
+                <div class="logout_box">
+                  <img src="../../images/logout.svg" alt="logout" />
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="fl_right">
-          <ul class="nospace">
-            <li>
-              <div class="topbar_date_box">
-                <h5 class="topbar_date">10:12</h5>
-                <h5 class="topbar_date">piątek 12.12.2021</h5>
-              </div>
-            </li>
-            <li>
-              <h3 class="topbar_username">Administrator</h3>
-            </li>
-            <li>
-              <div class="user_box">
-                <img src="../../images/user.svg" alt="user" />
-              </div>
-            </li>
-            <li>
-              <div class="logout_box">
-                <img src="../../images/logout.svg" alt="logout" />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-    <!-- Admin Header -->
-    <div class="wrapper header">
-      <header id="header" class="hoc clear">
-        <nav id="mainav">
-          <ul class="clear">
-            <li>
-              <img src="../../images/admin/friends.png" alt="friends" />
-              <a class="drop" href="#">UŻYTKOWNICY</a>
-              <ul>
+        <!-- Admin Header -->
+        <div class="wrapper header">
+          <header id="header" class="hoc clear">
+            <nav id="mainav">
+              <ul class="clear">
                 <li>
-                  <a href="./newUser.html">dodaj nowego użytkownika</a>
-                </li>
-                <li><a href="./userList.html">lista użytkowników</a></li>
-              </ul>
-            </li>
-            <li class="active">
-              <img src="../../images/admin/location.png" alt="location" />
-              <a href="#">WSZYSTKIE KONTA</a>
-              <ul>
-                <li>
-                  <a href="./newLocation.html">dodaj nowego użytkownika</a>
+                  <img src="../../images/admin/friends.png" alt="friends" />
+                  <a class="drop" href="#">UŻYTKOWNICY</a>
+                  <ul>
+                    <li>
+                      <a href="./newUser.html">dodaj nowego użytkownika</a>
+                    </li>
+                    <li><a href="./userList.html">lista użytkowników</a></li>
+                  </ul>
                 </li>
                 <li class="active">
-                  <a href="./locationList.html">lista użytkowników</a>
+                  <img src="../../images/admin/location.png" alt="location" />
+                  <a href="#">WSZYSTKIE KONTA</a>
+                  <ul>
+                    <li>
+                      <a href="./newLocation.html">dodaj nowego użytkownika</a>
+                    </li>
+                    <li class="active">
+                      <a href="./locationList.html">lista użytkowników</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <img src="../../images/admin/setting.png" alt="setting" />
+                  <a href="./deviceList.html">URZĄDZENIA</a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <img src="../../images/admin/setting.png" alt="setting" />
-              <a href="./deviceList.html">URZĄDZENIA</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+            </nav>
+          </header>
+        </div>
+      </div>
 
-    <div class="wrapper">
-      <div id="locationList" class="hoc clear">
-        <div class="locationList_container">
-          <div class="topContent">
-            <div class="searchBar">
-              <input type="text" />
-              <img src="../../images/sysadmin/search.svg" alt="search-icon" />
+      <div class="wrapper">
+        <div id="locationList" class="hoc clear">
+          <div class="locationList_container">
+            <div class="topContent">
+              <div class="searchBar">
+                <input type="text" />
+                <img src="../../images/sysadmin/search.svg" alt="search-icon" />
+              </div>
+              <div class="add_btn">
+                <img src="../../images/admin/add.svg" alt="add" />
+              </div>
             </div>
-            <div class="add_btn">
-              <img src="../../images/admin/add.svg" alt="add" />
-            </div>
-          </div>
 
-          <div class="searchInfo">znaleziono: 111 pozycji</div>
-          <table>
-            <tr>
-              <th style="width: 10%">LP</th>
-              <th style="width: 40%">NAZWA</th>
-              <th style="width: 30%">DATA DODANIA</th>
-              <th style="width: 20%">
-                <img src="../../images/sysadmin/setting.svg" alt="setting" />
-              </th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nazwa lokalizacji</td>
-              <td>11.11.2022</td>
-              <td>
-                <img
-                  src="../../images/sysadmin/eye.svg"
-                  class="view_btn"
-                  alt="eye"
-                />
-                <img
-                  src="../../images/sysadmin/close.svg"
-                  class="remove_btn"
-                  alt="close"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nazwa lokalizacji</td>
-              <td>11.11.2022</td>
-              <td>
-                <img
-                  src="../../images/sysadmin/eye.svg"
-                  class="view_btn"
-                  alt="eye"
-                />
-                <img
-                  src="../../images/sysadmin/close.svg"
-                  class="remove_btn"
-                  alt="close"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nazwa lokalizacji</td>
-              <td>11.11.2022</td>
-              <td>
-                <img
-                  src="../../images/sysadmin/eye.svg"
-                  class="view_btn"
-                  alt="eye"
-                />
-                <img
-                  src="../../images/sysadmin/close.svg"
-                  class="remove_btn"
-                  alt="close"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nazwa lokalizacji</td>
-              <td>11.11.2022</td>
-              <td>
-                <img
-                  src="../../images/sysadmin/eye.svg"
-                  class="view_btn"
-                  alt="eye"
-                />
-                <img
-                  src="../../images/sysadmin/close.svg"
-                  class="remove_btn"
-                  alt="close"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nazwa lokalizacji</td>
-              <td>11.11.2022</td>
-              <td>
-                <img
-                  src="../../images/sysadmin/eye.svg"
-                  class="view_btn"
-                  alt="eye"
-                />
-                <img
-                  src="../../images/sysadmin/close.svg"
-                  class="remove_btn"
-                  alt="close"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Nazwa lokalizacji</td>
-              <td>11.11.2022</td>
-              <td>
-                <img
-                  src="../../images/sysadmin/eye.svg"
-                  class="view_btn"
-                  alt="eye"
-                />
-                <img
-                  src="../../images/sysadmin/close.svg"
-                  class="remove_btn"
-                  alt="close"
-                />
-              </td>
-            </tr>
-          </table>
-          <div class="pagination">
-            <ul class="pagination simple-pagination" id="pagination"></ul>
+            <div class="searchInfo">znaleziono: 111 pozycji</div>
+            <table>
+              <tr>
+                <th style="width: 10%">LP</th>
+                <th style="width: 40%">NAZWA</th>
+                <th style="width: 30%">DATA DODANIA</th>
+                <th style="width: 20%">
+                  <img src="../../images/sysadmin/setting.svg" alt="setting" />
+                </th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Nazwa lokalizacji</td>
+                <td>11.11.2022</td>
+                <td>
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    class="view_btn"
+                    alt="eye"
+                  />
+                  <img
+                    src="../../images/sysadmin/close.svg"
+                    class="remove_btn"
+                    alt="close"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Nazwa lokalizacji</td>
+                <td>11.11.2022</td>
+                <td>
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    class="view_btn"
+                    alt="eye"
+                  />
+                  <img
+                    src="../../images/sysadmin/close.svg"
+                    class="remove_btn"
+                    alt="close"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Nazwa lokalizacji</td>
+                <td>11.11.2022</td>
+                <td>
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    class="view_btn"
+                    alt="eye"
+                  />
+                  <img
+                    src="../../images/sysadmin/close.svg"
+                    class="remove_btn"
+                    alt="close"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Nazwa lokalizacji</td>
+                <td>11.11.2022</td>
+                <td>
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    class="view_btn"
+                    alt="eye"
+                  />
+                  <img
+                    src="../../images/sysadmin/close.svg"
+                    class="remove_btn"
+                    alt="close"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Nazwa lokalizacji</td>
+                <td>11.11.2022</td>
+                <td>
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    class="view_btn"
+                    alt="eye"
+                  />
+                  <img
+                    src="../../images/sysadmin/close.svg"
+                    class="remove_btn"
+                    alt="close"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Nazwa lokalizacji</td>
+                <td>11.11.2022</td>
+                <td>
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    class="view_btn"
+                    alt="eye"
+                  />
+                  <img
+                    src="../../images/sysadmin/close.svg"
+                    class="remove_btn"
+                    alt="close"
+                  />
+                </td>
+              </tr>
+            </table>
+            <div class="pagination">
+              <ul class="pagination simple-pagination" id="pagination"></ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer -->
-    <div class="wrapper custom_footer">
-      <div id="copyright" class="hoc clear">
-        <img src="../../images/logo.png" alt="logo" />
-        <p>Wszelkie prawa zastrzeżone &copy; 2022</p>
+      <!-- Footer -->
+      <div class="wrapper custom_footer">
+        <div id="copyright" class="hoc clear">
+          <img src="../../images/logo.png" alt="logo" />
+          <p>Wszelkie prawa zastrzeżone &copy; 2022</p>
+        </div>
       </div>
     </div>
 
@@ -232,6 +234,7 @@
     <script src="../../layout/scripts/jquery.backtotop.js"></script>
     <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
     <script src="../../layout/scripts/jquery.simplePagination.js"></script>
+    <script src="../../layout/scripts/global.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -251,14 +254,14 @@
         });
 
         // View Button Event
-        $('.view_btn').on('click', function() {
-          window.location.href = './locationDetail.html';
-        })
+        $(".view_btn").on("click", function () {
+          window.location.href = "./locationDetail.html";
+        });
 
-        // Logout Button Event 
-        $('.logout_box').on('click', function() {
-          window.location.href = '../../index.html';
-        })
+        // Logout Button Event
+        $(".logout_box").on("click", function () {
+          window.location.href = "../../index.html";
+        });
       });
     </script>
   </body>

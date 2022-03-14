@@ -13,8 +13,7 @@
       type="text/css"
       media="all"
     />
-    <link rel="stylesheet" href="../../layout/styles/admin/deviceList.css" />
-    <link rel="stylesheet" href="../../layout/styles/simplePagination.css" />
+    <link rel="stylesheet" href="../../layout/styles/admin/newDevice.css" />
   </head>
 
   <body id="top">
@@ -67,7 +66,7 @@
                 </li>
                 <li>
                   <img src="../../images/admin/location.png" alt="location" />
-                  <a href="#">WSZYSTKIE KONTA</a>
+                  <a class="drop" href="#">WSZYSTKIE KONTA</a>
                   <ul>
                     <li>
                       <a href="./newLocation.html">dodaj nowego użytkownika</a>
@@ -81,10 +80,10 @@
                   <img src="../../images/admin/setting.png" alt="setting" />
                   <a class="drop" href="#">URZĄDZENIA</a>
                   <ul>
-                    <li>
+                    <li class="active">
                       <a href="./newDevice.html">dodaj nowego URZĄDZENIA</a>
                     </li>
-                    <li class="active">
+                    <li>
                       <a href="./deviceList.html">lista URZĄDZENIA</a>
                     </li>
                   </ul>
@@ -96,81 +95,25 @@
       </div>
 
       <div class="wrapper">
-        <div id="deviceList" class="hoc clear">
-          <div class="deviceList_container">
-            <div class="searchBar">
-              <input type="text" />
-              <img src="../../images/sysadmin/search.svg" alt="search-icon" />
+        <div id="newLocation" class="hoc clear">
+          <div class="newLocation_container">
+            <div class="newLocation_card">
+              <div class="header">
+                <img src="../../images/admin/add.svg" alt="add" />
+                <p class="search_header_content">DODAWANIE NOWEJ URZĄDZENIA</p>
+              </div>
+              <div class="content">
+                <input
+                  type="text"
+                  placeholder="Nazwa URZĄDZENIA"
+                  class="newDevice_form"
+                />
+                <select name="selectLocation" class="newDevice_form selectLocation">
+                  <option name="#">--- Select Location ---</option>
+                </select>
+              </div>
             </div>
-            <div class="searchInfo">znaleziono: 222 pozycji</div>
-            <table>
-              <tr>
-                <th style="width: 5%">LP</th>
-                <th style="width: 20%">NUMER SERYJNY</th>
-                <th style="width: 30%">LOKALIZACJA</th>
-                <th style="width: 30%">DATA DODANIA</th>
-                <th style="width: 15%">
-                  <img src="../../images/sysadmin/setting.svg" alt="setting" />
-                </th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>00012345</td>
-                <td>Salon Warszawa 1</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/close.svg" alt="close" />
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>00012345</td>
-                <td>Salon Warszawa 1</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/close.svg" alt="close" />
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>00012345</td>
-                <td>Salon Warszawa 1</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/close.svg" alt="close" />
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>00012345</td>
-                <td>Salon Warszawa 1</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/close.svg" alt="close" />
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>00012345</td>
-                <td>Salon Warszawa 1</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/close.svg" alt="close" />
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>00012345</td>
-                <td>Salon Warszawa 1</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/close.svg" alt="close" />
-                </td>
-              </tr>
-            </table>
-            <div class="pagination">
-              <ul class="pagination simple-pagination" id="pagination"></ul>
-            </div>
+            <button class="newLocation_btn">DODAJ URZĄDZENIA</button>
           </div>
         </div>
       </div>
@@ -188,24 +131,13 @@
     <script src="../../layout/scripts/jquery.min.js"></script>
     <script src="../../layout/scripts/jquery.backtotop.js"></script>
     <script src="../../layout/scripts/jquery.mobilemenu.js"></script>
-    <script src="../../layout/scripts/jquery.simplePagination.js"></script>
     <script src="../../layout/scripts/global.js"></script>
 
     <script>
       $(document).ready(function () {
-        $("#pagination").pagination({
-          items: 20,
-          itemOnPage: 8,
-          currentPage: 1,
-          cssStyle: "light-theme",
-          prevText: '<span aria-hidden="true"><</span>',
-          nextText: '<span aria-hidden="true">></span>',
-          onInit: function () {
-            // fire first page loading
-          },
-          onPageClick: function (page, evt) {
-            // some code
-          },
+        // New Location Button Event
+        $(".newLocation_btn").on("click", function () {
+          window.location.href = "./locationList.html";
         });
 
         // Logout Button Event

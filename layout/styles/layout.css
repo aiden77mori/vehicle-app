@@ -790,6 +790,7 @@ nav ol {
   margin: 0;
   background-color: #2e2e2e;
   border-top: 1px solid rgba(233, 233, 233, 0.47);
+  text-transform: uppercase;
 }
 #mainav li img {
   /* width: 32px; */

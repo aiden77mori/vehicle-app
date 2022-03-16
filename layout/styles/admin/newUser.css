@@ -53,7 +53,8 @@
 #newAccount .popup {
   display: none;
   width: 265px;
-  height: 195px;
+  max-height: 195px;
+  height: auto;
   background-color: #fff;
   border: 5px solid #fff;
   overflow-y: auto; 

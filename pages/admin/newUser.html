@@ -122,7 +122,8 @@
                 </div>
 
                 <div class="newAccount_form selectBox">
-                  <p>Lokalizacja</p>
+                  <p class="location_name">Lokalizacja</p>
+                  <input type="hidden" class="location_id" value="" />
                   <img
                     src="../../images/admin/down-carrot.svg"
                     alt="down-carrot"
@@ -134,12 +135,12 @@
           </div>
 
           <div class="popup">
-            <div>lokalizacja 1</div>
-            <div>lokalizacja 2</div>
-            <div>lokalizacja 3</div>
-            <div>lokalizacja 4</div>
-            <div>lokalizacja 5</div>
-            <div>lokalizacja 6</div>
+            <div onclick="setLocation('lokalizacja 1')">lokalizacja 1</div>
+            <div onclick="setLocation('lokalizacja 2')">lokalizacja 2</div>
+            <div onclick="setLocation('lokalizacja 3')">lokalizacja 3</div>
+            <div onclick="setLocation('lokalizacja 4')">lokalizacja 4</div>
+            <div onclick="setLocation('lokalizacja 5')">lokalizacja 5</div>
+            <div onclick="setLocation('lokalizacja 6')">lokalizacja 6</div>
           </div>
         </div>
       </div>
@@ -160,6 +161,11 @@
     <script src="../../layout/scripts/global.js"></script>
 
     <script>
+      function setLocation(id) {
+        $("#newAccount .popup").toggle();
+        $(".location_name").html(id);
+        $(".location_id").val(id);
+      }
       $(document).ready(function () {
         var left = $(".selectBox").position().left;
         var top = $(".selectBox").position().top;

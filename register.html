@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <title>Vehicle</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      href="layout/styles/layout.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="layout/styles/register.css" />
+  </head>
+
+  <body id="top">
+    <div class="wrapper">
+      <div id="login" class="hoc clear">
+        <div class="login_container">
+          <img src="./images/logo.png" alt="" />
+          <div class="login_box">
+            <h2 class="login_heading">Zarejestrować</h2>
+            <div class="login_card">
+              <input
+                type="text"
+                placeholder="imię"
+                class="login_form name"
+                disabled
+              />
+              <input
+                type="text"
+                placeholder="imię i nazwisko"
+                class="login_form username"
+                disabled
+              />
+              <input
+                type="text"
+                placeholder="mail"
+                class="login_form mail"
+                disabled
+              />
+              <input
+                type="text"
+                placeholder="hasło"
+                class="login_form password"
+              />
+              <button class="login_button">ZALOGUJ</button>
+            </div>
+            <div class="login_alert">
+              <img src="./images/login/alert.svg" alt="alert_icon" />
+              <p class="alert_content">Błędny login lub hasło.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPTS -->
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".login_button").on('click', function() {
+          alert('register success');
+        })
+      });
+    </script>
+  </body>
+</html>

@@ -17,21 +17,32 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
+  position: relative;
+  margin-bottom: 36px;
 }
 .searchBar .search_input {
   height: 100%;
   position: relative;
 }
-.searchBar button {
+.searchBar .report_header {
   height: 100%;
-  width: 200px;
-  background: #169fdb;
+  width: 50%;
+  background: #2E2E2E;
   border: none;
   color: #fff;
   font-size: 20px;
+  margin: 0 auto;
 }
-.searchBar button:hover {
-  background: #2e2e2e;
+.searchBar .report_button {
+  height: 100%;
+  width: 255px;
+  background: #169FDB;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
 }
 .searchBar input {
   width: 310px;
@@ -55,9 +66,9 @@
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 50%;
   border: none;
-  margin-bottom: 42px;
+  margin: 0 auto 42px auto;
 }
 tr {
   height: 48px;
@@ -71,9 +82,6 @@ tr td {
   color: #000;
   font-weight: bold;
   font-size: 13px;
-}
-tr th:last-child {
-  background-color: #2e2e2e;
 }
 tr td:last-child img {
   width: 20px;

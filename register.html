@@ -24,34 +24,35 @@
           <div class="login_box">
             <h2 class="login_heading">Zarejestrować</h2>
             <div class="login_card">
-              <input
-                type="text"
-                placeholder="imię"
-                class="login_form name"
-                disabled
-              />
-              <input
-                type="text"
-                placeholder="imię i nazwisko"
-                class="login_form username"
-                disabled
-              />
-              <input
-                type="text"
-                placeholder="mail"
-                class="login_form mail"
-                disabled
-              />
+              <div class="userInfoBox">
+                <strong>Login: </strong><span>vlady</span></br>
+                <strong>Imię i nazwisko: </strong><span>Vladyslav Parkhomenko</span></br>
+                <strong>Email: </strong><span>vlady@gmail.com</span>
+              </div>
               <input
                 type="text"
                 placeholder="hasło"
                 class="login_form password"
               />
-              <button class="login_button">ZALOGUJ</button>
-            </div>
-            <div class="login_alert">
-              <img src="./images/login/alert.svg" alt="alert_icon" />
-              <p class="alert_content">Błędny login lub hasło.</p>
+              <div class="login_alert">
+                <p class="alert_content">
+                  ZBYT SŁABE HASŁO. Hasło powinno mieć minimalnie: 
+                  8 znaków, 1 małą literę, 1 dużą literę, 1 cyfrę, 1 znak specjalny.
+                </p>
+              </div>
+              <input
+                type="text"
+                placeholder="powtórz hasło"
+                class="login_form confirm_password"
+              />
+              <div class="login_alert">
+                <p class="alert_content">Hasła nie są jednakowe.</p>
+              </div>
+              <div class="warnInfo">
+                <p> Hasło powinno mieć minimalnie: </p>
+                <p> 8 znaków, 1 małą literę, 1 dużą literę, 1 cyfrę, 1 znak specjalny </p>
+              </div>
+              <button class="login_button">POTWIERDŹ HASŁO</button>
             </div>
           </div>
         </div>

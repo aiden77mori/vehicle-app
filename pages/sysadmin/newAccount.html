@@ -54,24 +54,16 @@
           <header id="header" class="hoc clear">
             <nav id="mainav">
               <ul class="clear">
-                <li class="active">
-                  <img
-                    src="../../images/sysadmin/add-user.png"
-                    alt="add-user"
-                  />
-                  <a class="drop" href="#">DODAJ NOWE KONTO</a>
-                  <ul>
-                    <li class="active">
-                      <a href="./newAccount.html">DODAJ NOWE KONTO</a>
-                    </li>
-                    <li>
-                      <a href="./newUser.html">dodaj nowego użytkownika</a>
-                    </li>
-                  </ul>
+                <li style="width: 7%; background: #169fdb; border: #169fdb">
+                  <img src="../../images/home.svg" alt="archive" />
+                </li>
+                <li>
+                  <img src="../../images/sysadmin/friends.png" alt="archive" />
+                  <a href="./accountList.html">UŻYTKOWNICY</a>
                 </li>
                 <li>
                   <img src="../../images/sysadmin/archive.png" alt="archive" />
-                  <a href="./accountList.html">WSZYSTKIE KONTA</a>
+                  <a href="./accountList.html">KONTA</a>
                 </li>
                 <li>
                   <img src="../../images/sysadmin/setting.png" alt="setting" />
@@ -104,29 +96,74 @@
                   placeholder="Skrócona nazwa konta"
                   class="newAccount_form"
                 />
+                <div class="error">Pole wymagane</div>
                 <input
                   type="text"
                   placeholder="Pełna nazwa konta"
                   class="newAccount_form"
                 />
+                <div class="error">Pole wymagane</div>
                 <input
                   type="text"
                   placeholder="Nazwa użytkownika administratora"
                   class="newAccount_form"
                 />
+                <div class="error">Pole wymagane</div>
                 <input
                   type="text"
                   placeholder="Email administratora"
                   class="newAccount_form"
                 />
+                <div class="error">Pole wymagane</div>
                 <input
                   type="text"
                   placeholder="Pełna nazwa administratora"
                   class="newAccount_form"
                 />
+                <div class="error">Pole wymagane</div>
+                <div class="upload_logo">
+                  <div class="upload_btn">
+                    <input type="file" />
+                    <button>WYBIERZ PLIK</button>
+                  </div>
+                  <div style="width: auto; height: 100%; position: relative">
+                    <img class="upload_preview" />
+                    <h3
+                      class="remove_logo"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        color: black;
+                        cursor: pointer;
+                        line-height: 100%;
+                        z-index: 9999;
+                      "
+                    >
+                      x
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
             <button class="newAccount_btn">DODAJ KONTO</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- success modal -->
+      <div class="success_modal">
+        <div class="success_content">
+          <div class="header">
+            <img src="../../images/smile.svg" alt="warn" />
+          </div>
+          <div class="content">
+            <div class="warn_info">
+              <h1>OPERACJA ZAKOŃCZONA SUKCESEM!</h1>
+            </div>
+            <div class="button_group">
+              <button class="agree">OK</button>
+            </div>
           </div>
         </div>
       </div>

@@ -50,89 +50,78 @@
             </ul>
           </div>
         </div>
+
+        <div class="wrapper header">
+          <header id="header" class="hoc clear">
+            <nav id="mainav">
+              <ul class="clear">
+                <li>
+                  <img
+                    src="../../images/sysadmin/add-user.png"
+                    alt="add-user"
+                  />
+                  <a href="./newAccount.html">DODAJ NOWE KONTO</a>
+                </li>
+                <li>
+                  <img src="../../images/sysadmin/archive.png" alt="archive" />
+                  <a href="./accountList.html">WSZYSTKIE KONTA</a>
+                </li>
+                <li>
+                  <img src="../../images/sysadmin/setting.png" alt="setting" />
+                  <a href="./deviceList.html">URZĄDZENIA</a>
+                </li>
+                <li>
+                  <img src="../../images/sysadmin/server.png" alt="server" />
+                  <a href="./serverList.html">SERWERY</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </div>
       </div>
 
       <div class="wrapper">
         <div id="reportList" class="hoc clear">
           <div class="reportList_container">
             <div class="searchBar">
-              <button class="return_btn">powrót</button>
-              <div class="search_input">
-                <input type="text" />
-                <img src="../../images/sysadmin/search.svg" alt="search-icon" />
-              </div>
+              <button class="report_header">RAPORTY</button>
+              <button class="report_button">EKSPORTUJ</button>
             </div>
-            <div class="searchInfo">znaleziono: 222 pozycji</div>
             <table>
               <tr>
-                <th style="width: 5%">LP</th>
-                <th style="width: 17%">data</th>
-                <th style="width: 17%">lokalizacja</th>
-                <th style="width: 17%">ilość zdarzeń</th>
-                <th style="width: 17%">pobierz</th>
-                <th style="width: 10%">
-                  <img src="../../images/sysadmin/setting.svg" alt="setting" />
-                </th>
+                <th style="width: 35%">LOKALIZACJA</th>
+                <th style="width: 35%">KONTO</th>
+                <th style="width: 30%">ZDARZENIA</th>
               </tr>
               <tr>
                 <td>1</td>
                 <td>Merc</td>
-                <td>Mercedes Polska</td>
-                <td>Jan Kowalski</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/download.svg" alt="download-icon" />
-                </td>
+                <td>12</td>
               </tr>
               <tr>
                 <td>1</td>
                 <td>Merc</td>
-                <td>Mercedes Polska</td>
-                <td>Jan Kowalski</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/download.svg" alt="download-icon" />
-                </td>
+                <td>7</td>
               </tr>
               <tr>
                 <td>1</td>
                 <td>Merc</td>
-                <td>Mercedes Polska</td>
-                <td>Jan Kowalski</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/download.svg" alt="download-icon" />
-                </td>
+                <td>5</td>
               </tr>
               <tr>
                 <td>1</td>
                 <td>Merc</td>
-                <td>Mercedes Polska</td>
-                <td>Jan Kowalski</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/download.svg" alt="download-icon" />
-                </td>
+                <td>6</td>
               </tr>
               <tr>
                 <td>1</td>
                 <td>Merc</td>
-                <td>Mercedes Polska</td>
-                <td>Jan Kowalski</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/download.svg" alt="download-icon" />
-                </td>
+                <td>10</td>
               </tr>
               <tr>
                 <td>1</td>
                 <td>Merc</td>
-                <td>Mercedes Polska</td>
-                <td>Jan Kowalski</td>
-                <td>11.11.2022</td>
-                <td>
-                  <img src="../../images/sysadmin/download.svg" alt="download-icon" />
-                </td>
+                <td>2</td>
               </tr>
             </table>
             <div class="pagination">
@@ -176,9 +165,9 @@
         });
 
         // Return Button Event
-        $('.return_btn').on('click', function() {
-          window.location.href = './welcome.html';
-        })
+        $(".return_btn").on("click", function () {
+          window.location.href = "./welcome.html";
+        });
       });
     </script>
   </body>

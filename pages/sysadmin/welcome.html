@@ -60,20 +60,40 @@
             <div class="welcome_card">
               <div class="welcome_box top_box">
                 <div class="welcome_box_btn add-user">
-                  <img
-                    src="../../images/sysadmin/add-user.svg"
-                    class="box_img"
-                    alt="add-user"
-                  />
-                  <h2 class="box_title">DODAJ NOWE KONTO</h2>
+                  <div class="btn_top">
+                    <img
+                      src="../../images/sysadmin/add-user.svg"
+                      class="box_img"
+                      alt="add-user"
+                    />
+                    <h2 class="box_title">UŻYTKOWNICY</h2>
+                  </div>
+                  <div class="btn_bottom">
+                    <div class="btn_bottom_left new_user_btn">
+                      <img src="../../images/admin/add.svg" alt="add" />
+                    </div>
+                    <div class="btn_bottom_right user_list_btn">
+                      <img src="../../images/admin/list.svg" alt="list" />
+                    </div>
+                  </div>
                 </div>
                 <div class="welcome_box_btn achieve">
-                  <img
-                    src="../../images/sysadmin/archive.svg"
-                    class="box_img"
-                    alt="archive"
-                  />
-                  <h2 class="box_title">ZOBACZ WSZYSTKIE KONTA</h2>
+                  <div class="btn_top">
+                    <img
+                      src="../../images/sysadmin/archive.svg"
+                      class="box_img"
+                      alt="archive"
+                    />
+                    <h2 class="box_title">KONTA</h2>
+                  </div>
+                  <div class="btn_bottom">
+                    <div class="btn_bottom_left new_user_btn">
+                      <img src="../../images/admin/add.svg" alt="add" />
+                    </div>
+                    <div class="btn_bottom_right user_list_btn">
+                      <img src="../../images/admin/list.svg" alt="list" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="welcome_box">
@@ -83,7 +103,7 @@
                     class="box_img"
                     alt="setting"
                   />
-                  <h2 class="box_title">ZARZĄDZAJ URZĄDZENIAMI</h2>
+                  <h2 class="box_title">URZĄDZENIA</h2>
                 </div>
                 <div class="welcome_box_btn server">
                   <img
@@ -91,7 +111,7 @@
                     class="box_img"
                     alt="server"
                   />
-                  <h2 class="box_title">ZARZĄDZAJ SERWERAMI</h2>
+                  <h2 class="box_title">SERWERY</h2>
                 </div>
               </div>
               <div class="report_btn">
@@ -144,10 +164,10 @@
           window.location.href = "../../index.html";
         });
 
-        // Report Button Event 
-        $(".report_btn").on('click', function() {
-          window.location.href = './reportList.html';
-        })
+        // Report Button Event
+        $(".report_btn").on("click", function () {
+          window.location.href = "./reportList.html";
+        });
       });
     </script>
   </body>

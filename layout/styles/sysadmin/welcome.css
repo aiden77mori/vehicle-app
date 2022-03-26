@@ -55,10 +55,55 @@
   height: 186px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 35px 10px 33px 10px; */
+  cursor: pointer;
+}
+.welcome_card .welcome_box .welcome_box_btn .btn_top {
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome_card .welcome_box .welcome_box_btn .btn_top .box_title {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+/* .welcome_card .welcome_box .welcome_box_btn {
+  width: 29%;
+  height: 214px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 10px 33px 10px;
+} */
+.welcome_card .welcome_box .welcome_box_btn .btn_bottom {
+  width: 100%;
+  height: 79px;
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.welcome_card .welcome_box .welcome_box_btn .btn_bottom div {
+  width: 50%;
   cursor: pointer;
+}
+.welcome_card .welcome_box .welcome_box_btn .btn_bottom .btn_bottom_left {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome_card .welcome_box .welcome_box_btn .btn_bottom div:hover {
+  background: rgba(0, 0, 0, 0.13);
+}
+.welcome_card .welcome_box .welcome_box_btn .btn_bottom .btn_bottom_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .welcome_card .welcome_box .welcome_box_btn .box_img {
   width: 40px;
@@ -78,6 +123,12 @@
 .welcome_card .welcome_box .setting {
   background-color: #0071A9;
 }
+.welcome_card .welcome_box .setting:hover {
+  background-color: #006293;
+}
 .welcome_card .welcome_box .server {
   background-color: #014077;
+}
+.welcome_card .welcome_box .server:hover {
+  background-color: #013868;
 }

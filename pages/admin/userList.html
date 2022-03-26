@@ -119,7 +119,11 @@
                 </td>
                 <td></td>
                 <td>
-                  <img src="../../images/sysadmin/eye.svg" alt="eye" />
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    alt="eye"
+                    class="profile_edit"
+                  />
                   <img src="../../images/sysadmin/close.svg" alt="close" />
                 </td>
               </tr>
@@ -131,7 +135,11 @@
                 <td></td>
                 <td>lokalizacja 1</td>
                 <td>
-                  <img src="../../images/sysadmin/eye.svg" alt="eye" />
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    alt="eye"
+                    class="profile_edit"
+                  />
                   <img src="../../images/sysadmin/close.svg" alt="close" />
                 </td>
               </tr>
@@ -143,7 +151,11 @@
                 <td></td>
                 <td>lokalizacja 1</td>
                 <td>
-                  <img src="../../images/sysadmin/eye.svg" alt="eye" />
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    alt="eye"
+                    class="profile_edit"
+                  />
                   <img src="../../images/sysadmin/close.svg" alt="close" />
                 </td>
               </tr>
@@ -157,7 +169,11 @@
                 </td>
                 <td></td>
                 <td>
-                  <img src="../../images/sysadmin/eye.svg" alt="eye" />
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    alt="eye"
+                    class="profile_edit"
+                  />
                   <img src="../../images/sysadmin/close.svg" alt="close" />
                 </td>
               </tr>
@@ -171,7 +187,11 @@
                 </td>
                 <td>lokalizacja 3</td>
                 <td>
-                  <img src="../../images/sysadmin/eye.svg" alt="eye" />
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    alt="eye"
+                    class="profile_edit"
+                  />
                   <img src="../../images/sysadmin/close.svg" alt="close" />
                 </td>
               </tr>
@@ -183,13 +203,53 @@
                 <td></td>
                 <td></td>
                 <td>
-                  <img src="../../images/sysadmin/eye.svg" alt="eye" />
+                  <img
+                    src="../../images/sysadmin/eye.svg"
+                    alt="eye"
+                    class="profile_edit"
+                  />
                   <img src="../../images/sysadmin/close.svg" alt="close" />
                 </td>
               </tr>
             </table>
             <div class="pagination">
               <ul class="pagination simple-pagination" id="pagination"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="user_edit_modal_container">
+        <div class="modal_content">
+          <div class="modal_header">
+            <p>EDYCJA PROFILU</p>
+          </div>
+          <div class="modal_card">
+            <div class="user_info_field">
+              <p>Nazwa Użytkownika / login</p>
+              <input type="text" class="search_form username" value="vlady" />
+            </div>
+
+            <div class="user_info_field">
+              <p>Imię i nazwisko</p>
+              <input
+                type="text"
+                class="search_form user_fullname"
+                value="Vladyslav Parkhomenko"
+              />
+            </div>
+
+            <div class="user_info_field">
+              <p>Email</p>
+              <input
+                type="text"
+                class="search_form email"
+                value="vlady@gmail.com"
+              />
+            </div>
+            <div class="modal_footer">
+              <button class="edit_cancel modify_btn">Anuluj</button>
+              <button class="edit_agree modify_btn">modyfikować</button>
             </div>
           </div>
         </div>
@@ -232,6 +292,13 @@
         $(".logout_box").on("click", function () {
           window.location.href = "../../index.html";
         });
+      });
+
+      $(".profile_edit").on("click", function () {
+        $(".user_edit_modal_container").show();
+      });
+      $(".edit_cancel").on("click", function () {
+        $(".user_edit_modal_container").hide();
       });
     </script>
   </body>
